@@ -46,12 +46,4 @@ jobs:
       with:
         name: library
         path: ~/.m2
-    - name: Upload pages
-      uses: actions/upload-pages-artifact@v3
-      with:
-        # Upload entire repository
-        path: 'api/build/intermediates/java_doc_dir/release/javaDocReleaseGeneration'
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
 
